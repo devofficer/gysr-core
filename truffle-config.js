@@ -79,6 +79,30 @@ module.exports = {
       gas: 10000000,
       gasPrice: 2000000000 // 2 gwei
     },
+
+    toronto: {
+      provider: () => new HDWalletProvider({
+        mnemonic: {
+          phrase: process.env.MNEMONIC_PHRASE
+        },
+        providerOrUrl: 'https://rpc.toronto.sx.technology'
+      }),
+      network_id: 647,
+      gas: 10000000,
+      gasPrice: 2000000000 // 2 gwei
+    },
+
+    sportx: {
+      provider: () => new HDWalletProvider({
+        mnemonic: {
+          phrase: process.env.MNEMONIC_PHRASE
+        },
+        providerOrUrl: 'https://rpc.sx.technology'
+      }),
+      network_id: 416,
+      gas: 10000000,
+      gasPrice: 2000000000 // 2 gwei
+    },
   },
 
   compilers: {
